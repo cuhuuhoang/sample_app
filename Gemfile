@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 ruby '2.1.6'
 gem 'rails', '4.2.5'
-gem 'mysql2'
 gem 'bootstrap-sass', '3.2.0.0'
 gem 'sass-rails', '5.0.4'
 gem 'uglifier', '2.5.3'
@@ -13,7 +12,7 @@ gem 'jbuilder', '2.2.3'
 gem 'sdoc', '0.4.0', group: :doc
 
 group :development, :test do
-  #gem 'sqlite3', '1.3.9'
+  gem 'mysql2'
   gem 'byebug', '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring', '1.1.3'
