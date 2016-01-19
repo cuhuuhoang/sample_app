@@ -67,4 +67,5 @@ class UsersControllerTest < ActionController::TestCase
     assert_redirected_to root_url
   end
 
+
 end

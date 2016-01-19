@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  before_action :non_logged_in_user, only: [:new, :create]
   before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
@@ -61,6 +61,14 @@ class UsersController < ApplicationController
         store_location
         flash[:danger] = "Please log in."
         redirect_to login_url
+      end
+    end
+
+    #confirms a non logged-in user
+    def non_logged_in_user
+      if logged_in?
+        flash[:danger] = "You already had account"
+        redirect_to current_user
       end
     end
 
