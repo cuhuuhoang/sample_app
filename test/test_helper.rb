@@ -29,6 +29,6 @@ class ActiveSupport::TestCase
   private
     #return true inside an integration test
     def integration_test?
-      defined?(post)
+      defined?(post_via_redirect)
     end
 end
