@@ -30,4 +30,17 @@ class UsersIndexTest < ActionDispatch::IntegrationTest
     get users_path
     assert_select 'a', text: 'delete', count: 0
   end
+
+  test "should not display inactivated user" do
+    log_in_as(@non_admin)
+    get users_path
+    assert_select 'a[href=?]', user_path(@admin), text: @admin.name
+    get user_path(@admin)
+    assert_template 'users/show'
+    @admin.toggle!(:activated)
+    get users_path
+    assert_select 'a[href=?]', user_path(@admin), text: @admin.name, count: 0
+    get user_path(@admin)
+    assert_redirected_to root_path
+  end
 end
