@@ -1,0 +1,26 @@
+I, [2016-01-26T08:21:09.715384 #5590]  INFO -- : Refreshing Gem list
+I, [2016-01-26T08:21:11.892578 #5590]  INFO -- : listening on addr=/home/rails/sampleapp/shared/sockets/unicorn.sampleapp.sock fd=10
+I, [2016-01-26T08:21:11.892803 #5590]  INFO -- : worker=0 spawning...
+I, [2016-01-26T08:21:11.894790 #5590]  INFO -- : worker=1 spawning...
+I, [2016-01-26T08:21:11.897298 #5590]  INFO -- : master process ready
+I, [2016-01-26T08:21:11.904443 #5593]  INFO -- : worker=0 spawned pid=5593
+I, [2016-01-26T08:21:11.904670 #5593]  INFO -- : worker=0 ready
+I, [2016-01-26T08:21:11.906298 #5596]  INFO -- : worker=1 spawned pid=5596
+I, [2016-01-26T08:21:11.906495 #5596]  INFO -- : worker=1 ready
+I, [2016-01-26T09:07:09.746183 #6403]  INFO -- : Refreshing Gem list
+I, [2016-01-26T09:07:12.051148 #6403]  INFO -- : unlinking existing socket=/home/rails/sampleapp/shared/sockets/unicorn.sampleapp.sock
+I, [2016-01-26T09:07:12.051491 #6403]  INFO -- : listening on addr=/home/rails/sampleapp/shared/sockets/unicorn.sampleapp.sock fd=10
+I, [2016-01-26T09:07:12.051669 #6403]  INFO -- : worker=0 spawning...
+I, [2016-01-26T09:07:12.054868 #6403]  INFO -- : worker=1 spawning...
+I, [2016-01-26T09:07:12.056311 #6406]  INFO -- : worker=0 spawned pid=6406
+I, [2016-01-26T09:07:12.056529 #6406]  INFO -- : worker=0 ready
+I, [2016-01-26T09:07:12.059240 #6403]  INFO -- : master process ready
+I, [2016-01-26T09:07:12.065680 #6409]  INFO -- : worker=1 spawned pid=6409
+I, [2016-01-26T09:07:12.065987 #6409]  INFO -- : worker=1 ready
+/usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:6403 (or pid=/home/rails/sampleapp/shared/pids/unicorn.sampleapp.pid is stale) (ArgumentError)
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /usr/local/rvm/gems/ruby-2.2.1/gems/unicorn-5.0.1/bin/unicorn_rails:209:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn_rails:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn_rails:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
