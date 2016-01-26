@@ -17,3 +17,4 @@ test:
 production:
   <<: *default
   database: sample_app_production
+  password: ENV["DATABASE_RAILS_PASSWORD"]
