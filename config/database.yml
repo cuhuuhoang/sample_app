@@ -4,7 +4,7 @@ default: &default
   pool: 5
   host: localhost
   username: rails
-  password: dbadminpass
+  password: <%= ENV["DATABASE_RAILS_PASSWORD"] %>
 
 development:
   <<: *default
@@ -17,4 +17,4 @@ test:
 production:
   <<: *default
   database: sample_app_production
-  password: ENV["DATABASE_RAILS_PASSWORD"]
+  password: <%= ENV["DATABASE_RAILS_PASSWORD"] %>
