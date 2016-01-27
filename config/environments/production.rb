@@ -80,15 +80,15 @@ Rails.application.configure do
   #config mailer
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :smtp
-  host = 'sampleappchh.herokuapp.com'
+  host = 'sample.vn.ee'
   config.action_mailer.default_url_options = {host: host}
   ActionMailer::Base.smtp_settings = {
-      :address => 'smtp.sendgrid.net',
+      :address => 'smtp.gmail.com',
       :port => '587',
       :authentication => :plain,
-      :user_name => ENV['SENDGRID_USERNAME'],
-      :password => ENV['SENDGRID_PASSWORD'],
-      :domain => 'heroku.com',
+      :user_name => ENV['EMAIL_USERNAME'],
+      :password => ENV['EMAIL_PASSWORD'],
+      :domain => 'gmail.com',
       :enable_starttls_auto => true
   }
 end
