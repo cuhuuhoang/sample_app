@@ -7,7 +7,9 @@ class StaticPagesController < ApplicationController
   end
 
   def sendmail
-    User.first.send_activation_email
+    #User.first.send_activation_email
+    ExampleMailer.sample_email(User.first).deliver
+
   end
 
   def about

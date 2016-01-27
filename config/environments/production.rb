@@ -83,12 +83,12 @@ Rails.application.configure do
   host = 'sample.vn.ee'
   config.action_mailer.default_url_options = {host: host}
   ActionMailer::Base.smtp_settings = {
-      :address => 'smtp.gmail.com',
+      :address => 'smtp.mailgun.org',
       :port => '587',
       :authentication => :plain,
-      :user_name => ENV['EMAIL_USERNAME'],
-      :password => ENV['EMAIL_PASSWORD'],
-      :domain => 'gmail.com',
-      :enable_starttls_auto => true
+      :user_name => "postmaster@sandbox05cf645b99f14b0ebb6332730257ee3c.mailgun.org",
+      :password => "95e81e585845677b6302124f07b7bf6f",
+      :domain => "sandbox05cf645b99f14b0ebb6332730257ee3c.mailgun.org",
+      #:enable_starttls_auto => true
   }
 end
