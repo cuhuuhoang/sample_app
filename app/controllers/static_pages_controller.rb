@@ -3,6 +3,11 @@ class StaticPagesController < ApplicationController
   end
 
   def help
+
+  end
+
+  def sendmail
+    User.first.send_activation_email
   end
 
   def about

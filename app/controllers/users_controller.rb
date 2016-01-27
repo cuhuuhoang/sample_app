@@ -15,6 +15,7 @@ class UsersController < ApplicationController
 
   def new
     @user = User.new
+    #User.first.send_activation_email
   end
   
   def create
