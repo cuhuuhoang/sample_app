@@ -15,6 +15,9 @@ gem 'turbolinks', '2.3.0'
 gem 'jbuilder', '2.2.3'
 gem 'sdoc', '0.4.0', group: :doc
 gem 'pg', '0.17.1'
+gem 'carrierwave', '0.10.0'
+gem 'mini_magick', '3.8.0'
+gem 'fog', '1.36.0'
 
 group :development, :test do
   gem 'byebug', '3.4.0'
