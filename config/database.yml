@@ -3,18 +3,21 @@ default: &default
   encoding: unicode
   pool: 5
   host: localhost
-  username: rails
-  password: <%= ENV["DATABASE_RAILS_PASSWORD"] %>
 
 development:
   <<: *default
   database: sample_app_development
+  username: rails
+  password: <%= ENV["DATABASE_RAILS_PASSWORD"] %>
 
 test:
   <<: *default
   database: sample_app_test
+  username: rails
+  password: <%= ENV["DATABASE_RAILS_PASSWORD"] %>
 
 production:
   <<: *default
   database: sample_app_production
+  username: rails
   password: <%= ENV["DATABASE_RAILS_PASSWORD"] %>

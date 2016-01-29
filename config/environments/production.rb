@@ -42,7 +42,7 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  config.force_ssl = false
+  config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -86,9 +86,9 @@ Rails.application.configure do
       :address => 'smtp.mailgun.org',
       :port => '587',
       :authentication => :plain,
-      :user_name => "postmaster@sandbox05cf645b99f14b0ebb6332730257ee3c.mailgun.org",
-      :password => "95e81e585845677b6302124f07b7bf6f",
-      :domain => "sandbox05cf645b99f14b0ebb6332730257ee3c.mailgun.org",
+      :user_name => "postmaster@quangbanhadat.com",
+      :password => "nhadatemailpass",
+      :domain => "quangbanhadat.com",
       #:enable_starttls_auto => true
   }
 end
