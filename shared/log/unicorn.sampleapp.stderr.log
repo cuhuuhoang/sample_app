@@ -24,3 +24,13 @@ I, [2016-01-26T09:07:12.065987 #6409]  INFO -- : worker=1 ready
 	from /usr/local/rvm/gems/ruby-2.2.1/bin/unicorn_rails:23:in `<main>'
 	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
 	from /usr/local/rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2016-01-29T10:52:27.272225 #10135]  INFO -- : Refreshing Gem list
+I, [2016-01-29T10:52:29.974974 #10135]  INFO -- : unlinking existing socket=/home/rails/sampleapp/shared/sockets/unicorn.sampleapp.sock
+I, [2016-01-29T10:52:29.977201 #10135]  INFO -- : listening on addr=/home/rails/sampleapp/shared/sockets/unicorn.sampleapp.sock fd=10
+I, [2016-01-29T10:52:29.977342 #10135]  INFO -- : worker=0 spawning...
+I, [2016-01-29T10:52:29.979556 #10135]  INFO -- : worker=1 spawning...
+I, [2016-01-29T10:52:29.980710 #10139]  INFO -- : worker=0 spawned pid=10139
+I, [2016-01-29T10:52:29.980934 #10139]  INFO -- : worker=0 ready
+I, [2016-01-29T10:52:29.982538 #10135]  INFO -- : master process ready
+I, [2016-01-29T10:52:29.989265 #10142]  INFO -- : worker=1 spawned pid=10142
+I, [2016-01-29T10:52:29.989559 #10142]  INFO -- : worker=1 ready
