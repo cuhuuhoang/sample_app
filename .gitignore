@@ -27,3 +27,6 @@
 
 #ignore image
 /public/uploads
+
+#ignore nohup.out
+nohup.out
