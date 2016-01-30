@@ -23,7 +23,7 @@
 /.idea
 
 #Ignore log
-/shared/log/*
+/shared/log
 
 #ignore image
-/public/uploads/*
+/public/uploads
