@@ -30,3 +30,6 @@
 
 #ignore nohup.out
 nohup.out
+
+#ignore public asset
+public/assets

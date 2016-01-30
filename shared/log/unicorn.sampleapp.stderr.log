@@ -34,3 +34,29 @@ I, [2016-01-29T10:52:29.980934 #10139]  INFO -- : worker=0 ready
 I, [2016-01-29T10:52:29.982538 #10135]  INFO -- : master process ready
 I, [2016-01-29T10:52:29.989265 #10142]  INFO -- : worker=1 spawned pid=10142
 I, [2016-01-29T10:52:29.989559 #10142]  INFO -- : worker=1 ready
+I, [2016-01-30T09:42:08.209573 #10135]  INFO -- : reaped #<Process::Status: pid 10139 exit 0> worker=0
+I, [2016-01-30T09:42:08.210703 #10135]  INFO -- : reaped #<Process::Status: pid 10142 exit 0> worker=1
+I, [2016-01-30T09:42:08.212496 #10135]  INFO -- : master complete
+I, [2016-01-30T09:42:09.300419 #23492]  INFO -- : Refreshing Gem list
+I, [2016-01-30T09:42:12.467694 #23492]  INFO -- : unlinking existing socket=/home/rails/sampleapp/shared/sockets/unicorn.sampleapp.sock
+I, [2016-01-30T09:42:12.468062 #23492]  INFO -- : listening on addr=/home/rails/sampleapp/shared/sockets/unicorn.sampleapp.sock fd=10
+I, [2016-01-30T09:42:12.468254 #23492]  INFO -- : worker=0 spawning...
+I, [2016-01-30T09:42:12.470882 #23492]  INFO -- : worker=1 spawning...
+I, [2016-01-30T09:42:12.472380 #23496]  INFO -- : worker=0 spawned pid=23496
+I, [2016-01-30T09:42:12.472674 #23496]  INFO -- : worker=0 ready
+I, [2016-01-30T09:42:12.476944 #23492]  INFO -- : master process ready
+I, [2016-01-30T09:42:12.485586 #23499]  INFO -- : worker=1 spawned pid=23499
+I, [2016-01-30T09:42:12.485844 #23499]  INFO -- : worker=1 ready
+I, [2016-01-30T10:04:14.960693 #23492]  INFO -- : reaped #<Process::Status: pid 23496 exit 0> worker=0
+I, [2016-01-30T10:04:14.961175 #23492]  INFO -- : reaped #<Process::Status: pid 23499 exit 0> worker=1
+I, [2016-01-30T10:04:14.961578 #23492]  INFO -- : master complete
+I, [2016-01-30T10:04:15.588564 #23701]  INFO -- : Refreshing Gem list
+I, [2016-01-30T10:04:18.618557 #23701]  INFO -- : unlinking existing socket=/home/rails/sampleapp/shared/sockets/unicorn.sampleapp.sock
+I, [2016-01-30T10:04:18.618989 #23701]  INFO -- : listening on addr=/home/rails/sampleapp/shared/sockets/unicorn.sampleapp.sock fd=10
+I, [2016-01-30T10:04:18.619264 #23701]  INFO -- : worker=0 spawning...
+I, [2016-01-30T10:04:18.625078 #23701]  INFO -- : worker=1 spawning...
+I, [2016-01-30T10:04:18.627570 #23701]  INFO -- : master process ready
+I, [2016-01-30T10:04:18.633392 #23704]  INFO -- : worker=0 spawned pid=23704
+I, [2016-01-30T10:04:18.633682 #23704]  INFO -- : worker=0 ready
+I, [2016-01-30T10:04:18.637089 #23706]  INFO -- : worker=1 spawned pid=23706
+I, [2016-01-30T10:04:18.637316 #23706]  INFO -- : worker=1 ready
