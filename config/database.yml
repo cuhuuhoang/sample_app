@@ -8,13 +8,13 @@ development:
   <<: *default
   database: sample_app_development
   username: rails
-  password: <%= ENV["DATABASE_RAILS_PASSWORD"] %>
+  password: dbadminpass
 
 test:
   <<: *default
   database: sample_app_test
   username: rails
-  password: <%= ENV["DATABASE_RAILS_PASSWORD"] %>
+  password: dbadminpass
 
 production:
   <<: *default
